@@ -46,27 +46,33 @@ body {
     object-fit: cover;
     transition: all 0.5s ease;
 }
+
+/* Ensure .gallery-item is positioned relative to contain .gallery-item-info */
 .gallery .gallery-item {
-    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden; /* Hides any overflowing content */
 }
 
-.gallery .gallery-item .visually-hidden {
+/* Initial state for the overlay (hidden) */
+.gallery .gallery-item-info {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(38, 38, 38, 0.2);
+    opacity: 0; /* Hidden by default */
+    background-color: rgba(38, 38, 38, 0.5); /* Background overlay color */
+    transition: opacity 0.3s ease; /* Smooth transition for fade-in effect */
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
+    color: #fff; /* Text color inside the overlay */
+    gap: 20px;
 }
 
-.gallery .gallery-item:hover .visually-hidden {
-    opacity: 50;
+/* Reveal overlay on hover */
+.gallery .gallery-item:hover .gallery-item-info {
+    opacity: 1; /* Fully visible on hover */
 }
 
-.gallery .gallery-item .fa fa-heart .fa
+    
