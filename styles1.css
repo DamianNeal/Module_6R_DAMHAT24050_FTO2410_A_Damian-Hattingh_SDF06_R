@@ -1,0 +1,118 @@
+/* Base Styles */
+
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #262626;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem; 
+    font-size: 1rem; 
+}
+/* Responsive layout for different window sizes */
+@media (min-width: 1024px) {
+    body {
+        max-width: auto; 
+        padding: auto; 
+    }
+}
+
+
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+    body {
+        padding: auto;
+        font-size: auto; 
+    }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    body {
+        padding: 1.5rem;
+        font-size: 1rem; 
+        max-width: 90%; 
+    }
+}
+
+/* Small screens (large smartphones) */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+        font-size: 0.9rem; 
+        max-width: 100%;
+    }
+}
+
+/* Extra small screens (small smartphones) */
+@media (max-width: 480px) {
+    body {
+        padding: 0.5rem;
+        font-size: 0.85rem; 
+        text-align: center; 
+        max-width: 100%;
+    }
+}
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+    body {
+        padding: 2rem;
+        font-size: 1.2rem; 
+    }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    body {
+        padding: 1.5rem;
+        font-size: 1rem; 
+        max-width: 90%; 
+    }
+}
+
+/* Small screens (large smartphones) */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+        font-size: 0.9rem; 
+        max-width: 100%;
+    }
+}
+
+/* Extra small screens (small smartphones) */
+@media (max-width: 480px) {
+    body {
+        padding: 0.5rem;
+        font-size: 0.85rem; 
+        text-align: center; 
+        max-width: 100%;
+    }
+}
+
+/* Main container to hold profile and gallery side by side */
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1.5rem; 
+    align-items: start;
+}
+
+
+
+

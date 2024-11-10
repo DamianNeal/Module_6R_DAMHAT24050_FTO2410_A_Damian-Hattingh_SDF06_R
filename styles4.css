@@ -1,0 +1,27 @@
+/* Loading icon fixed position*/
+.loader {
+    bottom: 0;
+    left: 0;
+    padding: 1rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 460px;
+    width:20px;
+    height: 20px;
+    border: 5px solid #474747;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: loading 0.50s ease infinite;
+}
+  
+  /* Rotaion of loading button*/
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

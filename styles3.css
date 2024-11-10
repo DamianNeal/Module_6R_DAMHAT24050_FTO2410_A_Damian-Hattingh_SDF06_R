@@ -1,35 +1,12 @@
-/* Base Styles */
-
-:root {
-    font-size: 10px;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Open Sans", Arial, sans-serif;
-    min-height: 100vh;
-    background-color: #fafafa;
-    color: #262626;
-    padding-bottom: 3rem;
-    margin: 0;
-}
-
 .gallery {
     width: 100%;
     max-width: 950px;
     margin: 0 auto;
-    padding: 50px 50px;
+    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-    grid-auto-rows: 600px;
-    grid-auto-flow: dense;
-    grid-gap: 20px;
-}  
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+} 
 .gallery .gallery-item {
     position: relative;
     background-color: #fafafa;
@@ -38,8 +15,8 @@ body {
 .gallery .gallery-item: :nth-child(7n + 1){
     grid-column: span 3;
     grid-row: span 3;
-
 }
+
 .gallery .gallery-item img{
     width: 100%;
     height: 100%;
@@ -50,7 +27,7 @@ body {
 /* Ensure .gallery-item is positioned relative to contain .gallery-item-info */
 .gallery .gallery-item {
     position: relative;
-    overflow: hidden; /* Hides any overflowing content */
+    overflow: hidden; 
 }
 
 /* Initial state for the overlay (hidden) */
@@ -82,11 +59,11 @@ body {
     bottom: 0;
     left: 280px;
     font-size: 15px;
-    opacity: 1; /* Hidden by default */
+    opacity: 1; 
     display: flex;
     align-items: end;
     justify-content:start;
-    color: #fff; /* Text color inside the overlay */
+    color: #fff;
     gap: 20px;
     overflow: visible;
     transform: rotate(180deg);
